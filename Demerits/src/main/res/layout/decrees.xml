@@ -4,9 +4,17 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ListView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/listView"
-        android:layout_gravity="center_horizontal" />
+        android:text="Request"
+        android:id="@+id/button"
+        android:onClick="request"/>
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/usersList"
+        android:clickable="true"
+        android:layout_gravity="center_horizontal"/>
 </LinearLayout>
