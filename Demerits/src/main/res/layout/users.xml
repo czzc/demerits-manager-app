@@ -9,8 +9,7 @@
         android:layout_height="wrap_content"
         android:text="Request"
         android:id="@+id/button"
-        android:onClick="request"
-        android:enabled="false"/>
+        android:onClick="request" />
 
     <ListView
         android:layout_width="fill_parent"

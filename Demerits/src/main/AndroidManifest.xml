@@ -29,6 +29,9 @@
 
         <activity android:name="Decrees"
             android:label="Decrees"/>
+
+        <activity android:name="Users"
+            android:label="Users" />
     </application>
 
 </manifest>

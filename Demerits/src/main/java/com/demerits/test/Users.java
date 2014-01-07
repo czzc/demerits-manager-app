@@ -3,7 +3,6 @@ package com.demerits.test;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -15,14 +14,14 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class Decrees extends Activity implements AsyncResponse {
+public class Users extends Activity implements AsyncResponse {
     RequestTask reqTask = new RequestTask();
     private ListView usersList;
     private ArrayAdapter<String> listAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setContentView(R.layout.decrees);
+        setContentView(R.layout.users);
         reqTask.delegate = this;
         super.onCreate(savedInstanceState);
 
@@ -34,17 +33,9 @@ public class Decrees extends Activity implements AsyncResponse {
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.alternate, menu);
-        return true;
-    }
-
     public void request(View v){
         //TODO fix it to where it can execute more than once without force closing app
-        reqTask.execute("SERVER_ADDRESS");
+        reqTask.execute("http://fsckthefirewall.com:5000/users");
     }
 
     public void processFinish(String output){
@@ -76,4 +67,4 @@ public class Decrees extends Activity implements AsyncResponse {
         }
         return super.onOptionsItemSelected(item);
     }
- }
+}

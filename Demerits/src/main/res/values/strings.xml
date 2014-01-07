@@ -4,5 +4,8 @@
     <string name="app_name">Demerit Manager</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="menu_addUser">Add User</string>
+    <string name="menu_addDemerit">New Demerit</string>
+    <string name="menu_addDecree">New Decree</string>
 
 </resources>

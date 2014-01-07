@@ -70,4 +70,9 @@ public class MainActivity extends ActionBarActivity {
         Intent i = new Intent(this, Decrees.class);
         startActivity(i);
     }
+
+    public void startUsers(View view){
+        Intent i = new Intent(this, Users.class);
+        startActivity(i);
+    }
 }
